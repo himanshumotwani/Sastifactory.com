@@ -1,0 +1,59 @@
+.about-bg{
+	background-image:url("shanna-camilleri-190745.jpg");
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+}
+
+.height{
+    min-height: 100vh;
+}
+.full-width{
+    width:25%;
+    margin-top:15%;
+    min-height:100px;
+    position:relative;
+    padding-left: 33%;
+}
+.form-style-fake{position:absolute;top:0px;}
+.form-style-base{position:absolute;top:0px;z-index: 999;opacity: 0;}
+.form-control{padding: 10px 50px;}
+.form-input{height:50px;border-radius: 0px;margin-top: 20px;}
+#main-input{width:250px;}
+.input-place{
+    top:35px;left: 20px;font-size:23px;color:#F7931D;}
+.margin{margin-top:10px;margin-bottom:10px;}
+
+/*====== style for placeholder ========*/
+
+.form-control::-webkit-input-placeholder {
+    color:lightgray;
+    font-size:18px;
+}
+.form-control:-moz-placeholder {
+    color:lightgray;
+    font-size:18px;
+}
+.form-control::-moz-placeholder {
+    color:lightgray;
+    font-size:18px;
+}
+.form-control:-ms-input-placeholder {
+    color:lightgray;
+    font-size:18px;
+}
+.btn{
+    background-color: #F7931D;
+}
+.button {
+    border: none;
+    color: Black;
+    padding: 9px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+}

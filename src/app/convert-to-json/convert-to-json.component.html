@@ -1,0 +1,109 @@
+<!-- <input type="file" (change)="onFileChange($event)" multiple="false" /> -->
+<!DOCTYPE html><html lang='en' class=''>
+  <head><script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/curnsey/pen/LGgvoL?q=product&order=popularity&depth=everything&show_forks=false" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+  <style class="cp-pen-styles">/* Using the ITCSS (http://itcss.io/) architecture for CSS */
+  
+  
+  /* 1. Settings - Preprocessors variables, fonts, imports, etc. */
+  
+ </style>
+ </head>
+ <body>
+  <body>
+    <div class="lightbox-blanket">
+      <div class="pop-up-container">
+        <div class="pop-up-container-vertical">
+          <div class="pop-up-wrapper">
+            <div class="go-back" (click)="GoBack();"><i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="product-details">
+              <div class="product-left">
+                <div class="product-info">
+                  <div class="product-manufacturer">NOOK
+                  </div>
+                  <div class="product-title">
+                    LOUNGE CHAIR
+                  </div>
+                  <div class="product-price" price-data="320.03">
+                    $320<span class="product-price-cents">03</span>
+                  </div>
+                </div>
+                <div class="product-image">
+                  <img src="http://3.design-milk.com/images/2013/07/Karim-Rashid-1-ChateauDAx_nook_chair.jpg" />
+                </div>
+              </div>
+              <div class="product-right">
+                <div class="product-description">
+                  Designer Karim Rashid continues to put his signature spin on all genres of design through various collaborations with top-notch companies. Another one to add to the win column is his work with Italian manufacturer Chateau d’Ax.
+                </div>
+                <div class="product-available">
+                  In stock. <span class="product-extended"><a href="#">Buy Extended Warranty</a></span>
+                </div>
+                <div class="product-rating">
+                  <i class="fa fa-star rating" star-data="1"></i>
+                  <i class="fa fa-star rating" star-data="2"></i>
+                  <i class="fa fa-star rating" star-data="3"></i>
+                  <i class="fa fa-star" star-data="4"></i>
+                  <i class="fa fa-star" star-data="5"></i>
+                  <div class="product-rating-details">(3.1 - <span class="rating-count">1203</span> reviews)
+                  </div>
+  
+                </div>
+                <div class="product-quantity">
+                  <label for="product-quantity-input" class="product-quantity-label">Quantity</label>
+                  <div (click)="SubtractQuantity()" class="product-quantity-subtract">
+                    <i class="fa fa-chevron-left"></i>
+                  </div>
+                  <div>
+                    <input (blur)="AddQuantity()" type="text" id="product-quantity-input" placeholder="0" value="0" />
+                  </div>
+                  <div (click)="AddProduct()" class="product-quantity-add">
+                    <i class="fa fa-chevron-right"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="product-bottom">
+                <div class="product-checkout">
+                  Total Price
+                  <div class="product-checkout-total">
+                    <i class="fa fa-usd"></i>
+                    <div class="product-checkout-total-amount">
+                      0.00
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="random-background">
+      <div class="itemlist">
+        <div *ngFor="let row of data" class="itemlist-item-wrapper">
+          <div (click)="OpenProduct(1)" class="product-details">
+            <div class="">
+              <div class="product-info">
+                <div class="product-title" item-data="1">
+                  {{row.Name}}
+                </div>
+                <div class="product-price" price-data="320.03" item-data="1">
+                  {{row.Price}}<span class="product-price-cents">03</span>
+                </div>
+              </div>
+              <div class="product-image" item-data="1">
+                <img src="http://3.design-milk.com/images/2013/07/Karim-Rashid-1-ChateauDAx_nook_chair.jpg"/>
+              </div>
+            </div>
+          </div>
+        </div>    
+        </div>
+      </div>
+      <div class="random-background1">
+      </div>
+  </body>
+  </body>
+  </html>
